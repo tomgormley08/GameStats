@@ -1,4 +1,4 @@
-package com.sirius_is.speakstats;
+package com.sirius_is.gamestats;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,7 +16,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 	private static final int DATABASE_VERSION = 1;
 
 	// Database Name
-	private static final String DATABASE_NAME = "SpeakstatsDB";
+	private static final String DATABASE_NAME = "GamestatsDB";
 
 	// Contacts table name
 	private static final String TABLE_CONTACTS = "Contacts";

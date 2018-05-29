@@ -1,4 +1,4 @@
-package com.sirius_is.speakstats;
+package com.sirius_is.gamestats;
 
 import java.util.ArrayList;
 import java.util.Locale;
@@ -7,7 +7,7 @@ import android.app.Activity;
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.os.Bundle;
-import android.speech.RecognizerIntent;
+//import android.speech.RecognizerIntent;
 import android.view.Menu;
 import android.view.View;
 import android.widget.ImageButton;
@@ -26,25 +26,25 @@ public class MainActivity extends Activity {
 		setContentView(R.layout.activity_main);
 
 		txtSpeechInput = (TextView) findViewById(R.id.txtSpeechInput);
-		btnSpeak = (ImageButton) findViewById(R.id.btnSpeak);
+		//btnSpeak = (ImageButton) findViewById(R.id.btnSpeak);
 
 		// hide the action bar
-		getActionBar().hide();
+		//getActionBar().hide();
 
-		btnSpeak.setOnClickListener(new View.OnClickListener() {
+		//btnSpeak.setOnClickListener(new View.OnClickListener() {
 
-			@Override
-			public void onClick(View v) {
+			/*@Override
+			/public void onClick(View v) {
 				promptSpeechInput();
 			}
-		});
+		});*/
 
 	}
 
 	/**
 	 * Showing google speech input dialog
 	 * */
-	private void promptSpeechInput() {
+	/*private void promptSpeechInput() {
 		Intent intent = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
 		intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL,
 				RecognizerIntent.LANGUAGE_MODEL_FREE_FORM);
@@ -58,12 +58,12 @@ public class MainActivity extends Activity {
 					getString(R.string.speech_not_supported),
 					Toast.LENGTH_SHORT).show();
 		}
-	}
+	}*/
 
 	/**
 	 * Receiving speech input
 	 * */
-	@Override
+	/*@Override
 	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 		super.onActivityResult(requestCode, resultCode, data);
 
@@ -79,7 +79,7 @@ public class MainActivity extends Activity {
 		}
 
 		}
-	}
+	}*/
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
