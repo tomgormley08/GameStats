@@ -1,4 +1,4 @@
-package com.sirius_is.speakstats;
+package com.sirius_is.gamestats;
 
 public class Contact {
 	

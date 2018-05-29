@@ -16,10 +16,10 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 	private static final int DATABASE_VERSION = 1;
 
 	// Database Name
-	private static final String DATABASE_NAME = "GamestatsDB";
+	private static final String DATABASE_NAME = "gamestatsDB";
 
 	// Contacts table name
-	private static final String TABLE_CONTACTS = "Contacts";
+	private static final String TABLE_CONTACTS = "contacts";
 
 	// Contacts Table Columns names
 	private static final String CONTACT_ID = "id";
@@ -95,8 +95,8 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 		SQLiteDatabase db = this.getWritableDatabase();
 
 		ContentValues values = new ContentValues();
-		values.put(CONTACT_NICKNAME, contact.getNickname()); // Contact Name
-		values.put(CONTACT_PH_NO, contact.getPhoneNumber()); // Contact Phone
+		values.put(CONTACT_NICKNAME, Contact.getNickname()); // Contact Name
+		values.put(CONTACT_PH_NO, Contact.getPhoneNumber()); // Contact Phone
 
 		// Inserting Row
 		db.insert(TABLE_CONTACTS, null, values);
