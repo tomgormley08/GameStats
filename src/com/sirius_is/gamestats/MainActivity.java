@@ -18,6 +18,7 @@ public class MainActivity extends Activity {
 
 	private TextView txtSpeechInput;
 	private ImageButton btnSpeak;
+	private ImageButton btnAttack;
 	private final int REQ_CODE_SPEECH_INPUT = 100;
 
 	@Override
@@ -27,6 +28,7 @@ public class MainActivity extends Activity {
 
 		txtSpeechInput = (TextView) findViewById(R.id.txtSpeechInput);
 		//btnSpeak = (ImageButton) findViewById(R.id.btnSpeak);
+		btnAttack = (ImageButton) findViewById(R.id.btn1A);
 
 		// hide the action bar
 		//getActionBar().hide();
@@ -38,7 +40,7 @@ public class MainActivity extends Activity {
 				promptSpeechInput();
 			}
 		});*/
-
+		//btnAttack.setOnClickListener(new contact.
 	}
 
 	/**

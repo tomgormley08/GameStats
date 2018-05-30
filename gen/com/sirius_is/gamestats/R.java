@@ -31,9 +31,14 @@ public final class R {
         public static final int ico_mic=0x7f020002;
     }
     public static final class id {
-        public static final int action_settings=0x7f090002;
-        public static final int btnSpeak=0x7f090001;
-        public static final int txtSpeechInput=0x7f090000;
+        public static final int action_settings=0x7f090007;
+        public static final int btn1A=0x7f090000;
+        public static final int btn1B=0x7f090001;
+        public static final int btn1C=0x7f090002;
+        public static final int btn2A=0x7f090003;
+        public static final int btn2B=0x7f090004;
+        public static final int btn2C=0x7f090005;
+        public static final int txtSpeechInput=0x7f090006;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
